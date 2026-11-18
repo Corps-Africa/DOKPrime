@@ -36,16 +36,10 @@ No packages needed (Python 3 standard library only). Open `dist/index.html` in a
 
 ## Hosting
 
-The site deploys to GitHub Pages automatically on every push to `main`
-(`.github/workflows/pages.yml`), at https://corps-africa.github.io/dokprime/.
+The site is hosted on Vercel at https://dokprime.vercel.app/ and redeploys automatically on every push to `main`
+(pushes to other branches get preview deployments). Settings are in `vercel.json`: build `python3 build.py`, output `dist`.
 
-One-time setup: repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-
-`base_path` in `src/data/site.json` is the folder the site is served from (used by the 404 page).
-It is `/dokprime/` for GitHub Pages; change it to `/` when a custom domain (e.g. dokprimeventures.com) is connected.
-
-The site is also deployed on Vercel at https://dokprime.vercel.app/ using `vercel.json`
-(build `python3 build.py`, output `dist`, with `BASE_PATH=/` because Vercel serves from the root).
-The `BASE_PATH` environment variable overrides `base_path` from `site.json`.
+`base_path` in `src/data/site.json` is the folder the site is served from (used by the 404 page). It is `/` on Vercel,
+including with a custom domain. A `BASE_PATH` environment variable overrides it if the site is ever served from a sub-folder.
 
 `dist/` also works on any other static host (Netlify, Cloudflare Pages): build command `python3 build.py`, publish folder `dist`.
