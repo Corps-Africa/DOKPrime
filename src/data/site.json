@@ -1,0 +1,17 @@
+{
+  "_note": "Business details used across every page. Values in [square brackets] are placeholders to confirm with the client.",
+  "whatsapp": "233000000000",
+  "phone": "[Phone number]",
+  "email": "dokvictoria2@gmail.com",
+  "address": "[Business address]",
+  "hours": "[Opening hours]",
+  "form_endpoint": "https://formspree.io/f/YOUR_FORM_ID",
+  "nav": [
+    ["home", "index.html", "Home"],
+    ["about", "about.html", "About"],
+    ["products", "products.html", "Products &amp; Services"],
+    ["blog", "blog.html", "News"],
+    ["faq", "faq.html", "FAQ"],
+    ["contact", "contact.html", "Contact"]
+  ]
+}

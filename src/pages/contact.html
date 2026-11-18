@@ -1,0 +1,100 @@
+---
+title: Contact Us | DOK Prime Ventures
+description: Contact DOK Prime Ventures by WhatsApp, phone or email, or send an enquiry. Find our location and opening hours.
+nav: contact
+---
+    <section class="page-hero">
+      <div class="container hero-pad-cards">
+        <ol class="crumbs"><li><a href="index.html">Home</a></li><li>Contact</li></ol>
+        <p class="eyebrow">Contact us</p>
+        <h1>Let's talk</h1>
+        <p class="lead">Order, ask a question or discuss a bulk order. WhatsApp is the fastest way to reach us.</p>
+      </div>
+    </section>
+
+    <section class="section-flush">
+      <div class="container">
+        <div class="contact-cards">
+          <a class="contact-card contact-card-wa" {{wa:Hello DOK Prime Ventures, I would like to make an enquiry.}}>
+            <svg class="icon-lg" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            <h3>WhatsApp</h3><p>Chat with us now</p>
+          </a>
+          <a class="contact-card" href="tel:{{phone}}">
+            <svg class="icon-lg" aria-hidden="true"><use href="#i-call"/></svg>
+            <h3>Call us</h3><p>{{phone}}</p>
+          </a>
+          <a class="contact-card" href="mailto:{{email}}">
+            <svg class="icon-lg" aria-hidden="true"><use href="#i-mail"/></svg>
+            <h3>Email</h3><p>{{email}}</p>
+          </a>
+          <div class="contact-card">
+            <svg class="icon-lg" aria-hidden="true"><use href="#i-clock"/></svg>
+            <h3>Opening hours</h3><p>{{hours}}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight-top">
+      <div class="container split split-top">
+        <div>
+          <p class="eyebrow eyebrow-dark">Send an enquiry</p>
+          <h2>Send us a message</h2>
+          <p class="prose">Fill in the form and we'll get back to you as soon as we can, usually within one working day.</p>
+
+          <form id="enquiry-form" class="form" action="{{form_endpoint}}" method="POST" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="f-name">Full name</label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="f-phone">Phone / WhatsApp</label>
+                <input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="f-email">Email <span class="opt">(optional)</span></label>
+              <input id="f-email" name="email" type="email" autocomplete="email">
+            </div>
+            <div class="field">
+              <label for="f-topic">I'm interested in</label>
+              <select id="f-topic" name="topic" required>
+                <option value="">Choose one…</option>
+                <option>Poultry: eggs or birds</option>
+                <option>Bulk or event poultry order</option>
+                <option>Smocks &amp; traditional clothing</option>
+                <option>Group clothing order</option>
+                <option>Mobile money services</option>
+                <option>Partnership or something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-msg">Message</label>
+              <textarea id="f-msg" name="message" required placeholder="Tell us what you need, how many, and when."></textarea>
+            </div>
+            <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button class="btn btn-green" type="submit">Send message</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div>
+          <p class="eyebrow eyebrow-dark">Find us</p>
+          <h2>Visit us</h2>
+          <ul class="facts mb">
+            <li><svg class="icon-lg" aria-hidden="true"><use href="#i-pin"/></svg><span>{{address}}</span></li>
+            <li><svg class="icon-lg" aria-hidden="true"><use href="#i-clock"/></svg><span>{{hours}}</span></li>
+          </ul>
+          <!-- Replace this placeholder with a Google Maps embed once the address is confirmed:
+               <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=..." loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map to DOK Prime Ventures"></iframe> -->
+          <div class="map-ph">
+            <div>
+              <svg class="icon-lg" aria-hidden="true"><use href="#i-pin"/></svg>
+              <strong>Map coming soon</strong>
+              <p class="small-gap">A Google Map will appear here once the business address is confirmed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

@@ -1,0 +1,18 @@
+[
+  {"name": "Fresh Eggs (Crate)", "category": "poultry", "featured": true,
+   "description": "Farm-fresh eggs, collected daily. Great for homes, bakeries and restaurants.", "price": ""},
+  {"name": "Live Birds", "category": "poultry", "featured": true,
+   "description": "Healthy, well-fed birds for your table, events and celebrations.", "price": ""},
+  {"name": "Dressed Chicken", "category": "poultry", "featured": false,
+   "description": "Cleaned and ready to cook. Ask us about sizes and same-day orders.", "price": ""},
+  {"name": "Bulk & Event Orders", "category": "poultry", "featured": false,
+   "description": "Supplying a restaurant, shop, party or funeral? Tell us what you need and when.", "price": ""},
+  {"name": "Men's Smock", "category": "clothing", "featured": true,
+   "description": "Hand-woven traditional smock. Available in a range of colours and sizes.", "price": ""},
+  {"name": "Women's Smock", "category": "clothing", "featured": false,
+   "description": "Stylish woven smock designs cut for women, for work, church and celebrations.", "price": ""},
+  {"name": "Children's Smock", "category": "clothing", "featured": false,
+   "description": "Little smocks for little ones. Perfect for naming ceremonies and festive days.", "price": ""},
+  {"name": "Traditional Outfit", "category": "clothing", "featured": true,
+   "description": "Elegant traditional wear for weddings, festivals and special occasions.", "price": ""}
+]
