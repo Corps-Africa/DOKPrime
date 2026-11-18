@@ -18,6 +18,7 @@ Placeholders available inside pages and partials:
 """
 import html
 import json
+import os
 import re
 import shutil
 import urllib.parse
@@ -148,7 +149,8 @@ def main():
     for path in sorted((SRC / "pages").glob("*.html")):
         meta, body = parse(path)
         nav = meta.get("nav", "")
-        base_href = site.get("base_path", "/") if meta.get("base") == "auto" else meta.get("base")
+        base_path = os.environ.get("BASE_PATH") or site.get("base_path", "/")
+        base_href = base_path if meta.get("base") == "auto" else meta.get("base")
         base = f'\n  <base href="{base_href}">' if base_href else ""
         page = PAGE.format(
             base=base,
