@@ -5,6 +5,7 @@
   "email": "dokvictoria2@gmail.com",
   "address": "[Business address]",
   "hours": "[Opening hours]",
+  "base_path": "/dokprime/",
   "form_endpoint": "https://formspree.io/f/YOUR_FORM_ID",
   "nav": [
     ["home", "index.html", "Home"],

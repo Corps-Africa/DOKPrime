@@ -36,4 +36,12 @@ No packages needed (Python 3 standard library only). Open `dist/index.html` in a
 
 ## Hosting
 
-`dist/` works on any static host (Netlify, Cloudflare Pages, GitHub Pages). Set `404.html` as the not-found page if the host doesn't detect it automatically.
+The site deploys to GitHub Pages automatically on every push to `main`
+(`.github/workflows/pages.yml`), at https://corps-africa.github.io/dokprime/.
+
+One-time setup: repo **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+
+`base_path` in `src/data/site.json` is the folder the site is served from (used by the 404 page).
+It is `/dokprime/` for GitHub Pages; change it to `/` when a custom domain (e.g. dokprimeventures.com) is connected.
+
+`dist/` also works on any other static host (Netlify, Cloudflare Pages): build command `python3 build.py`, publish folder `dist`.

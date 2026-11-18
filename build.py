@@ -148,7 +148,8 @@ def main():
     for path in sorted((SRC / "pages").glob("*.html")):
         meta, body = parse(path)
         nav = meta.get("nav", "")
-        base = f'\n  <base href="{meta["base"]}">' if meta.get("base") else ""
+        base_href = site.get("base_path", "/") if meta.get("base") == "auto" else meta.get("base")
+        base = f'\n  <base href="{base_href}">' if base_href else ""
         page = PAGE.format(
             base=base,
             title=html.escape(meta["title"]),
